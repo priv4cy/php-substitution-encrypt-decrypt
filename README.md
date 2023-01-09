@@ -23,4 +23,3 @@ $decrypted = $ed->decrypt($encrypted, 'nX2b1F', 'sEcReTkEy');
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
