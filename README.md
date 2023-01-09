@@ -12,8 +12,11 @@ To deploy this project run
 ## Usage/Examples
 
 ```php
-$encrypted_string = encrypt_decrypt('encrypt', 'Hola mundo', 'nX2b1F', 'sEcReTkEy');
-$decrypted_string = encrypt_decrypt('decrypt', $encrypted_string, 'nX2b1F', 'sEcReTkEy');
+include('substitution.php');
+$ed = new substitution();
+
+$encrypted = $ed->encrypt('my string', 'nX2b1F', 'sEcReTkEy');
+$decrypted = $ed->decrypt($encrypted, 'nX2b1F', 'sEcReTkEy');
 ```
 
 
